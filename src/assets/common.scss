@@ -1,0 +1,92 @@
+p {font-family: 'Courier New', Courier, monospace; background-origin: padding-box;}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background:#81ccf5;
+    background-size: 100%;
+    background-position: bottom;
+
+    li{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    textarea:focus, input:focus{
+        outline: none;
+        border-style:none;
+    }
+}
+
+.flex{
+    display:flex;
+}
+
+.my_btn{
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    border:1px solid lightgray;
+    background:white;
+    color:grey;
+    text-align: center;
+    line-height: 2.4;
+    margin:0 10px;
+    transition: 0.5s;
+    cursor:pointer;
+    font-weight: bold;
+        &:hover{
+        background:#33854e;
+        color:White;
+        transition: 0.5s;
+        }
+        .active{
+            background:#33854e;
+            color:White;
+        }
+}
+
+
+.app_wrapper{
+    width:100%;
+    
+}
+.app_content{
+    background: lightyellow ;
+    border:1px solid rgb(131, 121, 123);
+    border-radius:10px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+.new_post-modal{
+    width: 300px ;
+    height: 300px ;
+    background: white;
+    border-radius: 15px;
+    
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

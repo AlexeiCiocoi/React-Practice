@@ -1,0 +1,145 @@
+.room_list-wrapper{
+    width:30%;
+    height:800px;
+    background:#dedcf1;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.messageList_wrapper{
+    width: 70%;
+    height: 800px;
+    background: #dadab1;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+
+    
+}
+
+.chat_wrapper{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 5px;
+    .my_btn{
+        margin: 0;
+        border-radius: 0;
+        background: lightskyblue;
+    }
+}
+
+
+.new-room_name{
+    width: 70%;
+    height: 40px !important;
+    text-decoration: none;
+    margin-bottom: 0 !important;
+    border: none!important;
+    outline: none;
+    border-radius: 10px  0 0 10px !important;
+    border-style:none;
+    padding-left: 10px !important;
+    background: white !important;
+    
+}
+
+.create-room{
+    margin-top: auto;
+    position: relative;
+}
+.room{
+    line-height: 2;
+    text-align: start;
+    width:100%;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left:65px;
+    &:hover{
+        color: lightgreen;
+        transition: 0.5s;
+    }
+}
+
+.create-room_error{
+    font-size: 14px;
+    color: red;
+    transition: 0.5s;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: showError 0.5s ease forwards;
+}
+
+@keyframes showError{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.send-message-holder{
+    margin-top:auto;
+
+}
+.chat-form{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+    overflow: hidden;
+    position: relative;
+    input{
+       &:focus{
+           box-shadow: 0 1px 0 0 white !important;
+       }
+    
+    }
+}
+
+.message_holder{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+
+.message_container{
+    padding:10px;
+    background:lightseagreen;
+    color:white;
+    border-radius:20px;
+    display:inline-flex;
+   
+    max-width: 100%;
+    margin-bottom:10px;
+}
+.message_userName{
+    margin: 0;
+    font-size: 11px;
+    color: grey;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.quest{
+    margin-left: auto;
+    .message_userName{
+        margin-left: auto;
+        padding-right: 5px;
+    }
+    .message_container{
+      align-self: flex-end;
+    }
+}

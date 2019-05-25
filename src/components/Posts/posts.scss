@@ -1,0 +1,47 @@
+.card{
+    
+    padding:30px 10px;
+    // border: 1px solid lightgray;
+    box-shadow: 1px 10px 10px #cdcb98;
+    margin-top:20px;
+    .card_title{
+        font-weight: bolder;
+        text-align: center;
+    }
+    .card_content{
+        font-size: 18px;
+
+    }
+
+}
+.single-post{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.single-post_body{
+
+}
+.single-post_btn{
+    margin-top: 30px;
+    align-self: flex-start
+}
+
+.new_post-modal{
+    padding: 30px;
+    margin: auto auto;
+    height: auto; 
+    p{
+        font-size: 13px;
+        color: red;
+        font-weight: bold;
+        margin: 0;
+    }
+    textarea{
+        resize: none;
+        height: 150px;
+    }
+}
+
+
+

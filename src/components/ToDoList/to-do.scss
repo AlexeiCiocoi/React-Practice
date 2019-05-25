@@ -1,0 +1,215 @@
+.todo_item-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:0 auto;
+    box-shadow:
+      /* The top layer shadow */
+          0 1px 1px rgba(0,0,0,0.15),
+              /* The second layer */
+          0 10px 0 -5px #eee,
+              /* The second layer shadow */
+          0 10px 1px -4px rgba(0,0,0,0.15),
+              /* The third layer */
+          0 20px 0 -10px #eee,
+              /* The third layer shadow */
+          0 20px 1px -9px rgba(0,0,0,0.15);
+      padding: 30px;
+      flex-direction: column;  
+      max-width: 260px;
+  }
+  .todo_item{
+    display:flex;
+    justify-content: center;
+    align-content: center; 
+    margin:20px auto;
+    min-height: 100px;
+    border-bottom:1.5px solid grey;
+    max-width:260px;
+    align-items: center;
+    p{
+      margin:0;
+      font-weight: bold;
+      padding-left:10px;
+    }
+  }
+
+
+
+.todo_wrapper{
+    background:moccasin;
+    max-width:800px;
+    margin: 0 auto;
+    padding: 80px 0;
+    margin-top:60px;
+    border:2px solid rgb(167, 148, 148);
+    border-radius: 7px;
+}
+
+.todo_container{
+    h1{
+        margin: 0;
+        text-align: center;
+        padding:0;
+    }
+}
+
+.todo_app-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding:30px;
+    position: relative;
+   .todo-text-input{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left:10px;
+    width:65%;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0px 5px 0px #dfe48f;
+    &:focus{
+        border: none;
+        box-shadow: 0px 0px 5px 0px rgb(84, 84, 241);
+        border-radius: 10px;
+        .error_shadow{
+            box-shadow: 0px 0px 5px 0px rgb(216, 75, 32);
+        }
+    }
+}
+}
+
+
+
+.todo_items-conatiner{
+   
+    padding:30px 40px;
+   
+    .todo_container-item{
+        background:cornflowerblue;
+        transition:1s;
+        animation: todoItems 1s linear ;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        min-height: 100px;
+        border: 1px solid lightgray;
+        border-radius:7px ;
+        margin-bottom:10px;
+        padding-left:20px ;
+        
+        p{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left:30px;
+            display:flex;
+            align-self: center;
+            word-break: break-all;
+        }
+
+        img{
+            max-width: 20px;
+            max-height:20px;
+            align-self:center;
+        }
+    }
+}
+@keyframes todoItems{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+
+.todo_settings{
+    
+    height:100%;
+    border:1xp sode lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:10px;
+    font-size: 16px;
+    margin-right:20px;
+    font-weight: bolder;
+    div{
+        width:100%;
+        transition:0.5s;
+        padding:10px;
+        border-radius:7px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .todo_complite{
+        color:lightgreen;
+        background: white;
+        &:hover{
+            background:lightgreen;
+            transition:0.5s;
+            color:white;
+        }
+    }
+    .todo_delete{
+        color:orangered;
+        background: white;
+        &:hover{
+            color:white;
+            background: orangered;
+        }
+    }
+    .todo_important{
+        color:lightsalmon;
+        background: white;
+        &:hover{
+            color:white;
+            background: lightsalmon;
+        }
+    }
+}
+
+
+.todo_filter-bar{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+    &:before{
+        content:'';
+        display:blobk;
+        position: absolute;
+        width:70%;
+        height:2px;
+        background:lightgray;
+        bottom: 0;
+    }
+    .my_btn{
+        &.active{
+            background: lightseagreen;
+        }
+    }
+}
+
+
+.input_error{
+    position: absolute;
+    opacity:0;
+    font-weight: bold;
+    font-size: 14px;
+    color:red;
+    transform:translateX(-50px);
+    transition:0.5s;
+    animation: error 1s ease forwards;
+    top:0;
+}
+
+@keyframes error {
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
